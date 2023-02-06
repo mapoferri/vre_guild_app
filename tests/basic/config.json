@@ -1,0 +1,73 @@
+{
+    "input_files": [
+        {
+            "name": "job_config",
+            "value": "unique_file_id_5e14abe0a37012.29503907",
+            "required": true,
+            "allow_multiple": false
+        }
+    ],
+    "arguments": [
+        {
+            "name": "execution",
+            "value": "run000"
+        },
+        {
+            "name": "project",
+            "value": "example"
+        },
+        {
+            "name": "description",
+            "value": "test"
+        },
+        {
+            "name": "launcher",
+            "value": "remote"
+        },
+        {
+            "name": "step1_gda_retrieval:disease_id",
+            "value": "C0002395"
+        },
+        {
+            "name": "step1_gda_retrieval:max_score",
+            "value": "1.0"
+        },
+	      {
+            "name": "step1_gda_retrieval:min_score",
+            "value": "0.2"
+        },
+        {
+            "name": "step2_parse_hippie:hippie_score",
+            "value": "0.2"
+        },
+        {
+            "name": "step3_making_nodes:curated",
+            "value": "False"
+        },
+	        {
+            "name": "step3_making_nodes:scoring_mode",
+            "value": "dis"
+        },
+        {
+            "name": "step4_call_guild:algorithm",
+            "value": "s"
+        }
+
+],
+    "output_files": [
+        {
+            "name": "netScore",
+            "required": true,
+            "allow_multiple": false,
+            "file": {
+                "file_type": "txt",
+                "data_type": "3d_structure",
+                "meta_data": {
+                    "visible": true,
+                    "description": "Result of tool application example"
+                }
+            }
+        }
+    ]
+}
+           

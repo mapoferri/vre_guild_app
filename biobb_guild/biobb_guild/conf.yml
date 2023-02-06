@@ -1,0 +1,15 @@
+#working_dir_path: /home/bscuser/Escritorio/biobbs/biobb_template-master/biobb_template
+
+template:
+  #paths:
+  #  input_file_path1: file:disc4all-data-fra/datasets/all_gda.tsv
+  #  input_file_path2: file:disc4all-data-fra/datasets/hippie_current.txt
+  #  input_file_path3: file:disc4all-data-fra/datasets/hs_genes.txt
+  #  output_file_path: output.txt
+  properties:
+    curated: false
+    disease: C0002395
+    hippie_score: 0.7
+    disgenet_score: 0.8
+    scoring_mode: dis
+    algorithm: s

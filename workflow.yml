@@ -1,0 +1,40 @@
+working_dir_path: guild_workflow
+can_write_console_log: False
+run_md: true
+parent_dir_path: ../../guild_workflow
+
+step1_gda_retrieval:
+  paths:
+    input_file_path: "."
+    output_csv_path:  gda_result.csv
+  properties:
+    retrieve_by: 'disease'
+    disease_id: C0002395
+    max_score: 1.0
+
+step2_parse_hippie:
+  paths: 
+    input_file_path1: "../../../datasets/hippie_current.txt"
+    input_file_path2: "../../../datasets/hs_genes.txt"
+    output_sif_path: interactome.sif
+  properties:
+    hippie_score: 0.2 
+
+step3_making_nodes:
+  paths:
+    input_file_path1: dependency/step2_parse_hippie/output_sif_path
+    input_file_path2: dependency/step1_gda_retrieval/output_csv_path
+    input_file_dataset: "../../../datasets/"
+    output_sif_path: nodes.sif
+  properties:
+    curated: False
+    scoring_mode: dis
+
+step4_call_guild:
+  paths:
+    input_file_path2: dependency/step2_parse_hippie/output_sif_path
+    input_file_path1: dependency/step3_making_nodes/output_sif_path
+    input_guild_dir: "../../../disc4all-data/guild/"
+    output_path:  output_netscore
+  properties:
+    algorithm: s

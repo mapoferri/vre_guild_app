@@ -1,0 +1,20 @@
+authors:
+  - family-names: Rodríguez-Navas
+    given-names: Laura
+    orcid: "https://orcid.org/0000-0003-4929-1219"
+  - family-names: Codó Tarraubella
+    given-names: Laia
+    orcid: "https://orcid.org/0000-0002-6797-8746"
+cff-version: 1.2.0
+date-released: "2020-01-27"
+keywords:
+  - template
+  - wrapper
+  - tool
+  - vre
+license: Apache-2.0
+message: "If you use this software, please cite it using these metadata."
+repository-code: "https://github.com/inab/vre_template_tool"
+type: software
+title: "VRE template Tool Executor"
+version: 0.1.2

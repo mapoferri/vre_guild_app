@@ -1,0 +1,4 @@
+sphinx
+sphinx-rtd-theme
+sphinx-automodapi
+git+https://github.com/inab/openvre-tool-api.git@master#egg=openvre-tool-api
