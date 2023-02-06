@@ -4,7 +4,7 @@
 import argparse
 import pandas as pd
 import numpy as np
-import igraph as ig
+#import igraph as ig
 import os
 import shutil
 from pathlib import PurePath
