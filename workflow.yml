@@ -14,8 +14,8 @@ step1_gda_retrieval:
 
 step2_parse_hippie:
   paths: 
-    input_file_path1: "../../../datasets/hippie_current.txt"
-    input_file_path2: "../../../datasets/hs_genes.txt"
+    input_file_path1: "../../../vre_guild_app/datasets/hippie_current.txt"
+    input_file_path2: "../../../vre_guild_app/datasets/hs_genes.txt"
     output_sif_path: interactome.sif
   properties:
     hippie_score: 0.2 
@@ -24,7 +24,7 @@ step3_making_nodes:
   paths:
     input_file_path1: dependency/step2_parse_hippie/output_sif_path
     input_file_path2: dependency/step1_gda_retrieval/output_csv_path
-    input_file_dataset: "../../../datasets/"
+    input_file_dataset: "../../../vre_guild_app/datasets/"
     output_sif_path: nodes.sif
   properties:
     curated: False
@@ -34,7 +34,7 @@ step4_call_guild:
   paths:
     input_file_path2: dependency/step2_parse_hippie/output_sif_path
     input_file_path1: dependency/step3_making_nodes/output_sif_path
-    input_guild_dir: "../../../disc4all-data/guild/"
+    input_guild_dir: "../../../vre_guild_app/disc4all-data/guild/"
     output_path:  output_netscore
   properties:
     algorithm: s
