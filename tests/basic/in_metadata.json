@@ -2,7 +2,7 @@
     {
         "_id": "unique_file_id_5e14abe0a37012.29503907",
         "type": "file",
-        "file_path": "workflow.yml",
+        "file_path": "/home/vre_guild_app/workflow.yml",
         "file_type": "TXT",
         "data_type": "input_file",
         "compressed": 0,
