@@ -19,7 +19,7 @@ Directly from GitHub:
 ```bash
 cd $HOME
 git clone https://github.com/inab/mapoferri/guild_app_vre.git
-cd vre_template_tool
+cd guild_app_vre
 ```
 
 Create the Conda environment (attention to changing the paths accordingly):
